@@ -28,15 +28,14 @@ class ViewController: UIViewController, URLSessionDownloadDelegate {
         
         //let center = view.center
         let trackLayer = CAShapeLayer()
-        
         let circularPath = UIBezierPath(arcCenter: .zero, radius: 100, startAngle: 0, endAngle: 2*CGFloat.pi, clockwise: true)
         trackLayer.path = circularPath.cgPath
-
         trackLayer.strokeColor = UIColor.lightGray.cgColor
         trackLayer.lineWidth = 10
         trackLayer.fillColor = UIColor.clear.cgColor
         trackLayer.lineCap = kCALineCapRound
         trackLayer.position = view.center
+        
         view.layer.addSublayer(trackLayer)
         shapeLayer.path = circularPath.cgPath
         shapeLayer.strokeColor = UIColor.red.cgColor
@@ -71,7 +70,6 @@ class ViewController: UIViewController, URLSessionDownloadDelegate {
         
         let percentage = CGFloat(totalBytesWritten)/CGFloat(totalBytesExpectedToWrite)
         
-        
         DispatchQueue.main.async{
             self.percentageLabel.text = "\(Int(percentage * 100))%"
             self.shapeLayer.strokeEnd = percentage
@@ -98,9 +96,7 @@ class ViewController: UIViewController, URLSessionDownloadDelegate {
         print("attempting to animate stroke");
         
         beginDownloadingSeedFile()
-        
-        //animateCircle()
-        
+        //animateCircle() 
     }
 }
 
