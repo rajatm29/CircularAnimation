@@ -48,13 +48,7 @@ class ViewController: UIViewController, URLSessionDownloadDelegate {
         shapeLayer.transform = CATransform3DMakeRotation(-CGFloat.pi/2, 0, 0, 1)
         
         view.layer.addSublayer(shapeLayer)
-        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action:  #selector(handleTap)))
-        
-       
-        
-     
-        
-    
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action:  #selector(handleTap)))    
     }
     
     let urlString = "https://i.imgur.com/TNL8Otc.jpg"
