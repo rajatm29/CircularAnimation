@@ -43,7 +43,6 @@ class ViewController: UIViewController, URLSessionDownloadDelegate {
         
         //let center = view.center
         let trackLayer = CAShapeLayer()
-        
         let circularPath = UIBezierPath(arcCenter: .zero, radius: 100, startAngle: 0, endAngle: 2*CGFloat.pi, clockwise: true)
         
         pulsatingLayer = CAShapeLayer()
@@ -65,6 +64,7 @@ class ViewController: UIViewController, URLSessionDownloadDelegate {
         trackLayer.fillColor = UIColor.backgroundColor.cgColor
         trackLayer.lineCap = kCALineCapRound
         trackLayer.position = view.center
+        
         view.layer.addSublayer(trackLayer)
         
         
@@ -85,7 +85,6 @@ class ViewController: UIViewController, URLSessionDownloadDelegate {
         percentageLabel.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         percentageLabel.center = view.center
         
-    
     }
     
     let urlString = "https://i.imgur.com/TNL8Otc.jpg"
@@ -107,7 +106,6 @@ class ViewController: UIViewController, URLSessionDownloadDelegate {
     func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
         
         let percentage = CGFloat(totalBytesWritten)/CGFloat(totalBytesExpectedToWrite)
-        
         
         DispatchQueue.main.async{
             self.percentageLabel.text = "\(Int(percentage * 100))%"
@@ -149,9 +147,7 @@ class ViewController: UIViewController, URLSessionDownloadDelegate {
         print("attempting to animate stroke");
         
         beginDownloadingSeedFile()
-        
-        //animateCircle()
-        
+        //animateCircle() 
     }
 }
 
