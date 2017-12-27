@@ -2,7 +2,8 @@
 
 Circular Loading Animation for Swift Applications 
 
-TODO:
+Planned development
+-------------------
 
 - [ ] Add Instantiation
 - [ ] Add Size Options
