@@ -1,4 +1,10 @@
 # CircularAnimation
 
-Simple Circular Loading animation for iOS using Swift.
+Circular Loading Animation for Swift Applications 
 
+TODO:
+
+[] Add Instantiation
+[] Add Size Options
+[] Add Color Options
+[] Clean
