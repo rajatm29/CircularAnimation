@@ -115,7 +115,7 @@ class ViewController: UIViewController, URLSessionDownloadDelegate {
     func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {
         print("finished downloading file")
     }
-
+    
     fileprivate func animateCircle() {
         let basicAnimation = CABasicAnimation(keyPath: "strokeEnd")
         basicAnimation.toValue = 1
@@ -145,7 +145,7 @@ class ViewController: UIViewController, URLSessionDownloadDelegate {
         print("attempting to animate stroke");
         
         beginDownloadingSeedFile()
-        //animateCircle() 
+        //animateCircle()
     }
 }
 
