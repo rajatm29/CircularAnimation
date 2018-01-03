@@ -57,8 +57,7 @@ class ViewController: UIViewController, URLSessionDownloadDelegate {
         setupCircleLayers()
         
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action:  #selector(handleTap)))
-        
-        
+
         setupPercentageLabel()
     }
     
@@ -132,10 +131,8 @@ class ViewController: UIViewController, URLSessionDownloadDelegate {
         animation.toValue = 1.5
         animation.duration = 0.8
         animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
-        
         animation.autoreverses = true
         animation.repeatCount = Float.infinity
-        
         
         pulsatingLayer.add(animation, forKey: "pulsing")
         
