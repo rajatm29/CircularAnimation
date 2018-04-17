@@ -11,4 +11,3 @@ Planned development
 - [ ] Add Instantiation
 - [ ] Add Size Options
 - [ ] Add Color Options
-- [ ] Clean
