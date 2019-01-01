@@ -1,4 +1,4 @@
-# Circular Loading
+# Circular Loader
 
 Circular Loading Animation for Swift Applications 
 
